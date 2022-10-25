@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/f2d71e2f4e.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>ONLINE CALCULATOR <i class="fa-sharp fa-solid fa-calculator"></i></h1>
+    </header>
+    <main>
+        <div class="wrap">
+        <div class="container" id="calcu">
+            <input type="text" placeholder="0" id="result" class="screen">
+
+            <div class="keys">
+                <div class="fflex">
+                    <button value="ac" onclick="clr()" style="background-color: #6f0930; font-weight: bold;">AC</button>
+                    <button value="bb" onclick="backspace()"><i class="fa-sharp fa-solid fa-delete-left"></i></button>
+                </div>
+                 
+                <div class="sflex">
+                    <button value="7" onclick="dis('7')" onkeydown="myFunction(event)">7</button>
+                    <button value="8" onclick="dis('8')" onkeydown="myFunction(event)">8</button>
+                    <button value="9" onclick="dis('9')" onkeydown="myFunction(event)">9</button>
+                    <button value="+" onclick="dis('+')" onkeydown="myFunction(event)" class="operation">+</button>
+                </div>
+                <div class="tflex">
+                <button value="6" onclick="dis('6')" onkeydown="myFunction(event)">6</button>
+                <button value="5" onclick="dis('5')" onkeydown="myFunction(event)">5</button>
+                <button value="4" onclick="dis('4')" onkeydown="myFunction(event)">4</button>
+                <button value="-" onclick="dis('-')" onkeydown="myFunction(event)" class="operation">-</button>
+
+                </div>
+
+                <div class="forflex">
+
+                <button value="1" onclick="dis('1')" onkeydown="myFunction(event)" >1</button>
+                <button value="2" onclick="dis('2')" onkeydown="myFunction(event)">2</button>
+                <button value="3" onclick="dis('3')" onkeydown="myFunction(event)">3</button>
+                <button value="*" onclick="dis('*')" onkeydown="myFunction(event)" class="operation">*</button>
+                </div>
+
+                <div class="fifflex">
+                <button value="0" onclick="dis('0')" onkeydown="myFunction(event)">0</button>
+                <button value="." onclick="dis('.')" onkeydown="myFunction(event)">.</button>
+                <button value="=" onclick="solve()" style="font-weight: bold;">=</button>
+                <button value="/" onclick="dis('/')" onkeydown="myFunction(event)" class="operation">/</button>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>Coded by Sarah Ossai</p>
+    </footer>
+</body>
+</html>

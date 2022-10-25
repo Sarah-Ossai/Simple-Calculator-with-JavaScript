@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-size: cover;
+  background-color: #1302911d;
+}
+header{
+  background-color: white;
+  padding: 1em;
+  color:rgb(11, 8, 110);
+  width: 100%;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.485);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+main{
+  margin-top: 7em;
+  
+}
+.wrap{
+  background-color: #1e0e94;
+  border: 6px solid  #1b010b6f;
+  padding: 1em;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 2px rgba(12, 8, 110, 0.591);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+    padding: 0.4em;
+    width: fit-content;
+    margin: auto;
+    background-color: #f1f4f1ee;
+    border-radius: 5px;
+}
+.keys{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.fflex, .sflex, .tflex, .forflex, .fifflex{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3em;
+}
+input{
+  padding: 2em;
+  font-size: 1.2em;
+  padding-right: 7em;
+  outline: none;
+  color: white;
+  background-color: #5e5d5ee7;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.786);
+}
+
+button{
+  width: 100%;
+  font-size: 1.2em;
+  padding: 1.2em;
+  background-color: #1e0e94;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 2px grey;
+}
+.fflex{
+  gap: 8em;
+}
+.operation{
+  background-color: white;
+  color: #1e0e94;
+  font-weight: bold;
+}
+footer{
+  margin-top: 7em;
+  background-color: #070326;
+  padding: 3em;
+  padding-bottom: 6em;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 700px){
+  header{
+    font-size: 0.7em;
+  }
+  button{
+    padding: 1em;
+    font-size: 1em;
+  }
+  input{
+    font-size: 1em;
+  }
+}
